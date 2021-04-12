@@ -37,7 +37,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $HELLPATH
-    echo "    Starting HellBot    "
+    echo "    Starting Nextron    "
     echo "
                               ╔╗─╔╗──╔╗╔╗╔╗────╔╗
                               ║║─║║──║║║║║║───╔╝╚╗
