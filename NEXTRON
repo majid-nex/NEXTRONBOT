@@ -4,19 +4,19 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $HELL_REPO == "HellBot" ]]
+    if [[ $NEX_REPO == "Nextron" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $HELL_REPO == "Hellbot" ]]
+    elif [[ $Nex_REPO == "Nextron" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $HELL_REPO =~ $regex ]]
+    elif [[ $Nex_REPO =~ $regex ]]
     then
-        if [[ $HELL_REPO_BRANCH ]]
+        if [[ $Nex_REPO_BRANCH ]]
         then
-            echo "${HELL_REPO}/archive/${HELL_REPO_BRANCH}.zip"
+            echo "${Nex_REPO}/archive/${Nex_REPO_BRANCH}.zip"
         else
-            echo "${HELL_REPO}/archive/master.zip"
+            echo "${Nex_REPO}/archive/master.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
@@ -26,7 +26,7 @@ _get_repolink () {
 
 _set_bot () {
     local zippath
-    zippath="hellbot.zip"
+    zippath="Nextron.zip"
     echo "  Downloading source code ..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
@@ -36,7 +36,7 @@ _set_bot () {
     echo "  Cleaning ..."
     rm -rf "$zippath"
     sleep 5
-    cd $HELLPATH
+    cd $NEXPATH
     echo "    Starting Nextron    "
     echo "
                               ╔╗─╔╗──╔╗╔╗╔╗────╔╗
