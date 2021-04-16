@@ -1,1 +1,2 @@
-worker: bash hellbot
+userbot: python -m NEXTRON
+
