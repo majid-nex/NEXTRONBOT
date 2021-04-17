@@ -1,5 +1,0 @@
-from os import system 
-system ("git clone https://GitHub.com/ULTRA-OP/ULTRA-X && python3 -m ULTRA")
-# try as phuk
-print("phuk")
-© 2021 GitHub, Inc.
