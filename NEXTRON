@@ -1,54 +1,5 @@
-#!/bin/bash
-#CREDIT HELLBOT
-
-_get_repolink () {
-    local regex
-    regex='(https?)://github.com/.+/.+'
-    if [[ $NEX_REPO == "Nextron" ]]
-    then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $Nex_REPO == "Nextron" ]]
-    then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $Nex_REPO =~ $regex ]]
-    then
-        if [[ $Nex_REPO_BRANCH ]]
-        then
-            echo "${Nex_REPO}/archive/${Nex_REPO_BRANCH}.zip"
-        else
-            echo "${Nex_REPO}/archive/master.zip"
-        fi
-    else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9WYWRlci9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    fi
-}
-
-
-_set_bot () {
-    local zippath
-    zippath="Nextron.zip"
-    echo "  Downloading source code ..."
-    wget -q $(_get_repolink) -O "$zippath"
-    echo "  Unpacking Data ..."
-    HELLPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
-    unzip -qq "$zippath"
-    echo "Done"
-    echo "  Cleaning ..."
-    rm -rf "$zippath"
-    sleep 5
-    cd $NEXPATH
-    echo "    Starting Nextron    "
-    echo "
-                              ╔╗─╔╗──╔╗╔╗╔╗────╔╗
-                              ║║─║║──║║║║║║───╔╝╚╗
-                              ║╚═╝╠══╣║║║║╚═╦═╩╗╔╝
-                              ║╔═╗║║═╣║║║║╔╗║╔╗║║
-                              ║║─║║║═╣╚╣╚╣╚╝║╚╝║╚╗
-                              ╚╝─╚╩══╩═╩═╩══╩══╩═╝
-    "
-
-    python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m userbot
-}
-
-_set_bot
+from os import system 
+system ("git clone https://GitHub.com/ULTRA-OP/ULTRA-X && python3 -m ULTRA")
+# try as phuk
+print("phuk")
+© 2021 GitHub, Inc.
