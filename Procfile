@@ -1,2 +1,1 @@
-userbot: python -m NEXTRON
-
+worker: python start.py
