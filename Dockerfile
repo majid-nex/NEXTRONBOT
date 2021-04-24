@@ -1,7 +1,7 @@
-FROM majid-nex/nextron-bot:alpine
+FROM majid-nex/ULTRA-X:alpine
 
 #clonning repo 
-RUN git clone https://github.com/majid-nex/nextron-bot.git /root/userbot
+RUN git clone https://github.com/majid-nex/ULTRA-X.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
