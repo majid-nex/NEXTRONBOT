@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/legendx22/LEGEND-BOT/",
-  "website": "https://github.com/legendx22/LEGEND-BOT/",
-  "success_url": "https://t.me/teamishere",
+  "repository": "https://github.com/majid-nex/nextron-bot/",
+  "website": "https://github.com/majid-nex/nextron-bot/",
+  "success_url": "https://t.me/zerotwosupport",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
