@@ -28,17 +28,17 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @LEGENDX22.",
+      "description": "Fill your Full name or Username like @Mr_Godfather9.",
       "value": "",
       "required": false
     },
     "ALIVE_MSG": {
-      "description": "Set Custom awake Message When entering .awake command.",
+      "description": "Set Custom alive Message When entering .alive command.",
       "value": "",
       "required": false
     },
     "ALIVE_PHOTTO": {
-      "description": "put here any telegraph media link use .awake to show.",
+      "description": "put here any telegraph media link use .alive to show.",
       "value": "",
       "required": false
     },
